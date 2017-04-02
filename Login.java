@@ -19,7 +19,6 @@ public class Login
    Login[3]="45678";
    
    
-   
 for(;;)
    {
 	System.out.println ("");
