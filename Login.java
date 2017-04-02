@@ -1,4 +1,5 @@
 //Modul Login
+/*Steven Sen, Dimas Adi Pratama, La Ode Muhammad Nurabdulrahma, Febriana Tindaon, Soefhwan*/
 import java.util.Scanner;
 public class Login
 {
