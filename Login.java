@@ -1,5 +1,9 @@
 //Modul Login
-/*Steven Sen, Dimas Adi Pratama, La Ode Muhammad Nurabdulrahma, Febriana Tindaon, Soefhwan*/
+/*Steven Sen			064001600022
+Dimas Adi Pratama		064001600003 
+La Ode Muhammad Nurabdulrahma	064001600013
+Febriana Tindaon		064001600017
+Soefhwan			065001600002 */
 import java.util.Scanner;
 public class Login
 {
