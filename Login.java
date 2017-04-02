@@ -14,9 +14,9 @@ public class Login
    
    Login = new String [10];
    Login[0]="Anung";
-   Login[1]="1234";
+   Login[1]="12345";
    Login[2]="Imam";
-   Login[3]="4567";
+   Login[3]="45678";
    
    
    
