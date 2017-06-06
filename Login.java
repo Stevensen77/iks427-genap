@@ -5,22 +5,18 @@ La Ode Muhammad Nurabdulrahma	064001600013
 Febriana Tindaon		064001600017
 Soefhwan			065001600002 */
 import java.util.Scanner;
-public class Login
+import javax.swing.JOptionPane;
+
+class dataUser
 {
+	private String user;
+	private String pin;
 
-   public static void main(String[] args)
-   
-   {
-   Scanner input = new Scanner (System.in);
-	String namauser,kode,password,username;
-
-   String[] Login;
-   
-   Login = new String [10];
-   Login[0]="Anung";
-   Login[1]="12345";
-   Login[2]="Imam";
-   Login[3]="45678";
+	public dataUser(String name, String pass)
+	{
+		user = name;
+		pin = pass;
+	}	
    
  
 
