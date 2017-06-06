@@ -41,24 +41,36 @@ public class login
 		USER[4] = new dataUser("Dimas", "dimas5678");
 			   
 
-for (;;)
-		{	
-			NAMA = JOptionPane.showInputDialog("Masukkan username = ");
+	for (;;)
+	{	
+		NAMA = JOptionPane.showInputDialog("Masukkan username = ");
 
-			PASSWORD = JOptionPane.showInputDialog("Masukkan pin = ");
+		PASSWORD = JOptionPane.showInputDialog("Masukkan pin = ");
 
-			for (i = 0; i <= 5; i++)
+		for (i = 0; i <= 5; i++)
+		{
+			if (i < 5)
 			{
-				if (i < 5)
+				if (NAMA.equals(USER[i].cekUser()) && PASSWORD.equals(USER[i].cekPin()))
 				{
-					if (NAMA.equals(USER[i].cekUser()) && PASSWORD.equals(USER[i].cekPin()))
-					{
-						JOptionPane.showMessageDialog(null, "Login Sukses");
-						break;
-					}
-				}
-				if (i > 4)
-				{
-					JOptionPane.showMessageDialog(null, "Maaf login gagal");
+					JOptionPane.showMessageDialog(null, "Login Sukses");
+					break;
 				}
 			}
+			if (i > 4)
+			{
+				JOptionPane.showMessageDialog(null, "Maaf login gagal");
+			}
+		}
+		pilihan = JOptionPane.showConfirmDialog(null, "Apakah anda ingin login lagi?", "LOGIN", JOptionPane.YES_NO_OPTION);
+		if (pilihan == JOptionPane.YES_OPTION)   
+		{    
+			JOptionPane.showMessageDialog(null, "Silahkan login lagi");   
+		}   
+		else   
+		{    
+			JOptionPane.showMessageDialog(null, "Terima Kasih");    
+			break;   
+		}   
+	}   
+}
