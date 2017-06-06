@@ -41,34 +41,24 @@ public class login
 		USER[4] = new dataUser("Dimas", "dimas5678");
 			   
 
-for(;;)
-   {
-	System.out.println ("");
-   System.out.print ("Masukkan username = ");
-   namauser = input.nextLine();
-   System.out.print ("Masukkan password = ");
-   kode = input.nextLine();
-   
-		if (Login[0].equals(namauser) && Login[1].equals(kode))
-		{
-			System.out.println ("Login sukses ! ");
-			System.out.println ("Hello Mr.Anung");
-			System.out.println ("");
-			break;
-		}
-		
-		
-		if (Login[2].equals(namauser) && Login[3].equals(kode))
-		{
-			System.out.println ("Login sukses ! ");
-			System.out.println ("Hello Mr.Imam");
-			System.out.println ("");
-			break;
-		}
-		else 
-		{
-		System.out.println("Maaf, Login Anda gagal");
-		}
-	}
-   }
-}
+for (;;)
+		{	
+			NAMA = JOptionPane.showInputDialog("Masukkan username = ");
+
+			PASSWORD = JOptionPane.showInputDialog("Masukkan pin = ");
+
+			for (i = 0; i <= 5; i++)
+			{
+				if (i < 5)
+				{
+					if (NAMA.equals(USER[i].cekUser()) && PASSWORD.equals(USER[i].cekPin()))
+					{
+						JOptionPane.showMessageDialog(null, "Login Sukses");
+						break;
+					}
+				}
+				if (i > 4)
+				{
+					JOptionPane.showMessageDialog(null, "Maaf login gagal");
+				}
+			}
