@@ -22,7 +22,25 @@ public class Login
    Login[2]="Imam";
    Login[3]="45678";
    
-   
+ 
+
+
+public class login
+{
+	public static void main(String args[])
+	{
+		String NAMA, PASSWORD;
+		int i, pilihan;
+		
+		dataUser[] USER = new dataUser[10];
+		
+		USER[0] = new dataUser("Arman", "arman1234");
+		USER[1] = new dataUser("Febri", "febri2345");
+		USER[2] = new dataUser("Steven", "steven3456");
+		USER[3] = new dataUser("Sofwan", "sofwan4567");
+		USER[4] = new dataUser("Dimas", "dimas5678");
+			   
+
 for(;;)
    {
 	System.out.println ("");
