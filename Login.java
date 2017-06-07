@@ -17,7 +17,16 @@ class dataUser
 		user = name;
 		pin = pass;
 	}	
-   
+   	
+	public String cekUser()
+	{
+		return(user);
+	}
+	public String cekPin()
+	{
+		return(pin);
+	}
+}
  
 
 
